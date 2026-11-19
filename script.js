@@ -2,7 +2,7 @@ const contentUrl = './content/site.json';
 const app = document.querySelector('#app');
 let content;
 
-const knot = `<img class="knot-divider" src="./assets/decor/knot.jpeg" alt="" aria-hidden="true">`;
+const knot = `<img class="knot-divider" src="./assets/decor/celtic_knot.jpeg" alt="" aria-hidden="true">`;
 const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const weddingDate = date => new Date(`${date}T12:00:00`);
 const niceDate = date => weddingDate(date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
