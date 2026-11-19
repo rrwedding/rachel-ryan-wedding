@@ -3,6 +3,7 @@ const app = document.querySelector('#app');
 let content;
 
 const knot = `<img class="knot-divider" src="./assets/decor/celtic_knot.jpeg" alt="" aria-hidden="true">`;
+const floral = `<svg class="floral-spark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 2c5 6 5 8 0 12-5-4-5-6 0-12Zm14 14c-6 5-8 5-12 0 4-5 6-5 12 0ZM16 30c-5-6-5-8 0-12 5 4 5 6 0 12ZM2 16c6-5 8-5 12 0-4 5-6 5-12 0Z"/><circle cx="16" cy="16" r="3" fill="var(--peach)"/></g></svg>`;
 const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const weddingDate = date => new Date(`${date}T12:00:00`);
 const niceDate = date => weddingDate(date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
