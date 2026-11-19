@@ -2,9 +2,9 @@ const contentUrl = './content/site.json';
 const app = document.querySelector('#app');
 let content;
 
-const knot = `<img class="knot-divider" src="./assets/decor/celtic_knot.jpeg" alt="" aria-hidden="true">`;
+const knot = `<img class="knot-divider" src="./assets/decor/celtic_knot.png" alt="" aria-hidden="true">`;
 const floral = `<svg class="floral-spark" viewBox="0 0 32 32" aria-hidden="true">
-  <g fill="var(--petal, #F1E6D0)">
+  <g fill="var(--petal, #DE8E65)">
     <ellipse cx="16" cy="9" rx="4.8" ry="7.2"/>
     <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(72 16 16)"/>
     <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(144 16 16)"/>
