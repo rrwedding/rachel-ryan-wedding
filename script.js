@@ -3,24 +3,7 @@ const app = document.querySelector('#app');
 let content;
 
 const knot = `<img class="knot-divider" src="./assets/decor/celtic_knot.png" alt="" aria-hidden="true">`;
-const floral = `<svg class="floral-spark" viewBox="0 0 32 32" aria-hidden="true">
-  <g fill="var(--petal, #DE8E65)">
-    <ellipse cx="16" cy="9" rx="4.8" ry="7.2"/>
-    <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(72 16 16)"/>
-    <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(144 16 16)"/>
-    <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(216 16 16)"/>
-    <ellipse cx="16" cy="9" rx="4.8" ry="7.2" transform="rotate(288 16 16)"/>
-  </g>
-  <circle cx="16" cy="16" r="4" fill="var(--petal-shade, #EADBB8)"/>
-  <g fill="var(--dot, #A39664)">
-    <circle cx="16" cy="14.1" r=".9"/>
-    <circle cx="17.81" cy="15.41" r=".9"/>
-    <circle cx="17.12" cy="17.54" r=".9"/>
-    <circle cx="14.88" cy="17.54" r=".9"/>
-    <circle cx="14.19" cy="15.41" r=".9"/>
-    <circle cx="16" cy="16" r=".8"/>
-  </g>
-</svg>`;
+const floral = `<svg class="floral-spark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 2c5 6 5 8 0 12-5-4-5-6 0-12Zm14 14c-6 5-8 5-12 0 4-5 6-5 12 0ZM16 30c-5-6-5-8 0-12 5 4 5 6 0 12ZM2 16c6-5 8-5 12 0-4 5-6 5-12 0Z"/><circle cx="16" cy="16" r="3" fill="var(--peach)"/></g></svg>`;
 const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const weddingDate = date => new Date(`${date}T12:00:00`);
 const niceDate = date => weddingDate(date).toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
